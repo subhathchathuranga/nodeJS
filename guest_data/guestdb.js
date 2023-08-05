@@ -19,23 +19,23 @@ const c = require('ansi-colors');
 //     add,view
 // };
 
-const addGuest = () => {
-    console.log(c.green("add"));
-}
+const addGuest = (name) => {
+    console.log(c.green("addition",name));
+};
 
-const updateGuess = () => {
-    console.log(c.yellow("update"));
-}
+const updateGuess = (id) => {
+    console.log(c.yellow("update",id));
+};
 
-const deleteGuest = () => {
-    console.log(c.red("delete"));
-}
+const deleteGuest = (id) => {
+    console.log(c.red("delete",id));
+};
 
 const readGuest = () => {
     console.log(c.blue("read"));
-}
+};
 
 const listGuest = () => {
     console.log(c.magenta("list"));
-}
+};
 module.exports = {addGuest,deleteGuest,updateGuess,readGuest,listGuest};
